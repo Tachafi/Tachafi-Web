@@ -32896,9 +32896,9 @@ s=r+1}r=B.c.dB(a,b)
 for(;r!==-1;){q=r===0?0:B.c.Ep(a,"\n",r-1)+1
 if(c===r-q)return q
 r=B.c.hl(a,b,r+1)}return null},
-Bw(a){return A.Ob(A.fN("http://tcf.m3hdi.click:8080/"+a),null)},
-a95(a,b,c){return A.a94(A.fN("http://tcf.m3hdi.click:8080/"+a),b,c)},
-aJ_(a,b,c){return A.aVr(A.fN("http://tcf.m3hdi.click:8080/"+a),b,c)},
+Bw(a){return A.Ob(A.fN("https://tcf.m3hdi.click:443/"+a),null)},
+a95(a,b,c){return A.a94(A.fN("https://tcf.m3hdi.click:443/"+a),b,c)},
+aJ_(a,b,c){return A.aVr(A.fN("https://tcf.m3hdi.click:443/"+a),b,c)},
 Ob(a,b){var s=0,r=A.D(t.Wd),q,p,o,n,m
 var $async$Ob=A.E(function(c,d){if(c===1)return A.A(d,r)
 while(true)switch(s){case 0:p=t.N
@@ -105479,7 +105479,7 @@ s===$&&A.b()
 s.aW(0)},
 AB(a){var s=0,r=A.D(t.H),q=this,p
 var $async$AB=A.E(function(b,c){if(b===1)return A.A(c,r)
-while(true)switch(s){case 0:p=A.aNM(A.aah(A.fN("ws://tcf.m3hdi.click:8080/ws/audio"),null))
+while(true)switch(s){case 0:p=A.aNM(A.aah(A.fN("ws://tcf.m3hdi.click:443/ws/audio"),null))
 q.w=p
 s=2
 return A.H(p.f.a,$async$AB)
