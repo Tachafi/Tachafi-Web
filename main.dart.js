@@ -105479,7 +105479,7 @@ s===$&&A.b()
 s.aW(0)},
 AB(a){var s=0,r=A.D(t.H),q=this,p
 var $async$AB=A.E(function(b,c){if(b===1)return A.A(c,r)
-while(true)switch(s){case 0:p=A.aNM(A.aah(A.fN("ws://tcf.m3hdi.click:443/ws/audio"),null))
+while(true)switch(s){case 0:p=A.aNM(A.aah(A.fN("wss://tcf.m3hdi.click:443/ws/audio"),null))
 q.w=p
 s=2
 return A.H(p.f.a,$async$AB)
