@@ -9,8 +9,25 @@ if (!window._flutter) {
 _flutter.buildConfig = {"engineRevision":"36335019a8eab588c3c2ea783c618d90505be233","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"}]};
 
 
+const loaderContainer = document.getElementsByClassName("loader-container")[0];
+
 _flutter.loader.load({
-  serviceWorkerSettings: {
-    serviceWorkerVersion: "1672778492"
-  }
+    onEntrypointLoaded: async function(engineInitializer) {
+        const appRunner = await engineInitializer.initializeEngine();
+
+        // Removes the loading spinner when the app runner is ready
+        if (document.body.contains(loaderContainer)) {
+            loaderContainer.style.transition = 'opacity 0.5s ease-out'; // Set transition effect
+            loaderContainer.style.opacity = '0'; // Start fading out
+
+            // Wait for the transition to complete before removing the element
+            setTimeout(() => {
+                if (document.body.contains(loaderContainer)) {
+                    document.body.removeChild(loaderContainer);
+                }
+            }, 500);
+        }
+
+        await appRunner.runApp();
+    }
 });
